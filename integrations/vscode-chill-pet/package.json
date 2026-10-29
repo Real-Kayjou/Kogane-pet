@@ -1,0 +1,13 @@
+{
+  "name": "chill-pet-companion",
+  "displayName": "Chill Pet Companion",
+  "version": "1.0.0",
+  "engines": {"vscode": "^1.85.0"},
+  "categories": ["Other"],
+  "activationEvents": ["onStartupFinished"],
+  "main": "./extension.js",
+  "contributes": {"configuration": {"title": "Chill Pet", "properties": {
+    "chillPet.enabled": {"type": "boolean", "default": false, "description": "Send minimal local save/build events to Chill Pet."},
+    "chillPet.shareCurrentDocument": {"type": "boolean", "default": false, "description": "Explicitly allow the current open document (up to 12 KB) to be sent only to local Chill Pet."}
+  }}}
+}

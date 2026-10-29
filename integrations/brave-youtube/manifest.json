@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "Chill Pet YouTube Companion",
+  "version": "1.0.0",
+  "description": "Sends minimal local YouTube playback cues to Chill Pet.",
+  "content_scripts": [{
+    "matches": ["*://www.youtube.com/*", "*://music.youtube.com/*"],
+    "js": ["content.js"],
+    "run_at": "document_idle"
+  }]
+}
